@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Roboto-bold";
+    src: url(fonts/Roboto-Bold.ttf) format("truetype")
+}
+@font-face {
+    font-family: "Roboto-medium";
+    src: url(fonts/Roboto-Medium.ttf) format("truetype")
+}
+
+:root {
+    --Roboto-bold:"Roboto-bold";
+    --Roboto-medium:"Roboto-medium";
+   }
+
+h1{
+font-family: var(--Roboto-bold);
+font-size:50px;
+color:#463A6C;
+padding-left:20px;
+padding-top:40px;
+border-top: 2px solid #463A6C;
+}
+
+p{
+font-family: var(--Roboto-medium);
+font-size: 16px; 
+}
+
+.hero{
+margin:auto;
+height:600px;
+width:auto;
+}
+
+.center{
+display:flex;
+justify-content:center;
+}
