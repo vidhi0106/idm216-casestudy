@@ -3,15 +3,28 @@
     src: url(fonts/Roboto-Bold.ttf) format("truetype")
 }
 @font-face {
-    font-family: "Roboto-medium";
-    src: url(fonts/Roboto-Medium.ttf) format("truetype")
+    font-family: "Roboto-regular";
+    src: url(fonts/Roboto-Regular.ttf) format("truetype")
 }
 
 :root {
     --Roboto-bold:"Roboto-bold";
-    --Roboto-medium:"Roboto-medium";
+    --Roboto-regular:"Roboto-regular";
    }
 
+
+.button{
+color:#463A6C;
+border-radius: 30px;
+border: 2px solid #463A6C;
+padding: 15px 30px;
+text-decoration:none;
+}  
+
+.button:hover{
+color:white;
+background-color:#463A6C;
+}
 h1{
 font-family: var(--Roboto-bold);
 font-size:50px;
@@ -21,18 +34,74 @@ padding-top:40px;
 border-top: 2px solid #463A6C;
 }
 
+h3{
+font-family: var(--Roboto-bold);
+font-size: 24px;
+margin-top:40px;
+padding-left:20px;
+}
+
 p{
-font-family: var(--Roboto-medium);
-font-size: 16px; 
+font-family: var(--Roboto-regular);
+font-size: 16px;
+padding-left:20px;
+padding-right:20px;
+line-height:30px;
+
+}
+
+strong{
+text-decoration: underline;
 }
 
 .hero{
 margin:auto;
-height:600px;
-width:auto;
+width:100%;
 }
 
 .center{
 display:flex;
 justify-content:center;
+}
+
+.user-persona{
+display:flex;
+flex-direction:row;
+justify-content: space-between;
+padding-left:20px;
+padding-right:20px;
+}
+
+.up-img{
+width:32%;
+}
+.low-fi{
+width:100%;
+margin:auto;
+}
+
+.vertical{
+display:flex;
+flex-direction:column;
+}
+
+.horizontal{
+display:flex;
+flex-direction: row;
+}
+
+.solution{
+width:50%;
+}
+
+.results{
+width:100%;
+display:flex;
+justify-content: center;
+margin-bottom:50px;
+}
+
+.results-img{
+width:85%;
+border: 1px solid #463A6C;
 }
